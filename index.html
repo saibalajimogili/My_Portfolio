@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="PORTFOLIO.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#home" class="logo">Sai Balaji<span> Mogili</span></a>
+
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#education" class="active">Education</a>
+        <a href="#services" class="active">Projects</a>
+        <a href="#certificates" class="active">Certificates & more</a>
+        <a href="#contact" class="active">Contact</a>
+      </nav>
+    </header>
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h1>Hi, It's <span>Balaji</span></h1>
+        <h3 class="text-animation">I'm a <span></span></h3>
+
+        <p>
+          As a CSE undergrad at SRMIST (2021 - 2025).
+           Proficient in languages like C/C++, Python, and basics of
+          Java, I specialize in web development (Django, HTML, ReactJS, Node.js,
+          CSS, JavaScript). Experienced in
+          databases including  SQLite, and MySQL, I'm dedicated to
+          staying updated with industry trends, passionate about coding, and
+          eager to contribute to dynamic projects.
+        </p>
+
+        <div class="social-icons">
+          <a href="https://www.instagram.com/saibalaji_23/"
+            ><i class="bx bxl-instagram-alt"></i
+          ></a>
+          <a href="https://github.com/saibalajimogili"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a href="https://x.com/saibalajimogili"
+            ><i class="bx bxl-twitter"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/sai-balaji-mogili-1b0b68227/"
+            ><i class="bx bxl-linkedin-square"></i
+          ></a>
+        </div>
+        <div class="btn-group">
+          <a href="#" class="btn">Hire Me</a>
+          <a href="#contact" class="btn">Contact Me</a>
+        </div>
+      </div>
+      <div class="home-img">
+        <img src="image.jpg" alt="" />
+      </div>
+    </section>
+
+    <section class="education" id="education">
+      <h2 class="heading">My <span>Education</span></h2>
+      <div class="timeline-items">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2019</div>
+          <div class="timeline-content">
+            <h3>HIGH SCHOOL</h3>
+            <p>FIITJEE HIGH SCHOOL : (GPA: 9.70/10.0)</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2021</div>
+          <div class="timeline-content">
+            <h3>11TH AND 12TH</h3>
+            <p>FIITJEE JUNIOR COLLAGE : (Percentage: 92.9%)</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2021 - 2025</div>
+          <div class="timeline-content">
+            <h3>B TECH</h3>
+            <p>SRMIST KTR CAMPUS : (CGPA: 8.76/10.0)</p>
+          </div>
+        </div>
+
+        
+            <h3> </h3>
+            <p>
+              
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <h2 class="heading">Projects</h2>
+      <div class="services-container">
+        <div class="service-box">
+          <div class="service-info">
+            <h4>QR code generator</h4>
+            <p>
+              <br />
+              A carbon footprint calculator estimates carbon footprints.It measures greenhouse gas emissions for the snapshot in time 
+
+            </p>
+          </div>
+        </div>
+
+        <div class="service-box">
+          <div class="service-info">
+            <h4>Live Face Authentication</h4>
+            <p>
+              <br />
+              Successfully implemented a secure face authentication system using
+              Python and OpenCV
+            </p>
+          </div>
+        </div>
+
+        <div class="service-box">
+          <div class="service-info">
+            <h4>Carbon Footoprint calculator</h4>
+            <p>
+              <br />
+              A carbon footprint calculator estimates carbon footprints.It measures greenhouse gas emissions for the snapshot in time 
+          
+
+            </p>
+          </div>
+        </div>
+
+        
+      </div>
+    </section>
+
+    <section class="certificates" id="certificates">
+      <h2 class="heading">Certificates</h2>
+      <div id="picture-holder">
+        <div id="image-slider">
+          <img src="1.jpg" alt="AWS" />
+          <img src="2.jpg" alt="Smart India Hackathon" />
+          <img src="3.jpg" alt="Experttalk Participation Certificate" />
+        </div>
+        <div class="nav-buttons">
+          <button class="ps_prev" onclick="prevImage()">Previous</button>
+          <button class="ps_next" onclick="nextImage()">Next</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact<span> Me</span></h2>
+      <form action="">
+        <div class="input-group">
+          <div class="input-box">
+            <input type="text" placeholder="Full Name" />
+            <input type="email" placeholder="Email" />
+          </div>
+          <div class="input-box">
+            <input type="number" placeholder="Phone Number" />
+            <input type="text" placeholder="Subject" />
+          </div>
+        </div>
+
+        <div class="input-group-2">
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+          ></textarea
+          ><input type="submit" value="Send Message" class="btn" />
+        </div>
+      </form>
+    </section>
+
+    <footer class="footer">
+
+      <div class="social">
+        <a href="https://www.instagram.com/saibalaji_23/"
+          ><i class="bx bxl-instagram-alt"></i
+        ></a>
+        <a href="https://github.com/saibalajimogili"
+          ><i class="bx bxl-github"></i
+        ></a>
+        <a href="https://x.com/saibalajimogili"
+          ><i class="bx bxl-twitter"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/sai-balaji-mogili-1b0b68227/"
+          ><i class="bx bxl-linkedin-square"></i
+        ></a>
+      </div>
+      <ul class="list">
+        <li>
+          <a href="#">FAQ</a>
+        </li>
+        <li>
+          <a href="#">Projects</a>
+        </li>
+        <li>
+          <a href="#">About Me</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+
+      <p class="copyright">&copy; Mogili Sai Balaji | All Rights Reserved |</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
